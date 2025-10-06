@@ -2,7 +2,6 @@ from pydantic import BaseModel
 from damage import damage
 from typing import List
 
-class weapon(BaseModel):
+class action(BaseModel):
     name: str
-    damage: damage
-
+    damage: List[damage]
